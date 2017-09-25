@@ -1,4 +1,7 @@
 /* Colors */
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 
 html,
 body,
@@ -63,6 +66,7 @@ body {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    background: transparent;
 }
 
 .cover {
@@ -99,7 +103,6 @@ body {
 
 .inner {
     border-width: 3px;
-    border-style: solid;
     background-color: #fff;
 }
 
@@ -121,14 +124,17 @@ body {
 .buttons a {
     display: inline-block;
     padding: 0 8px;
-    color: rgba(100, 105, 106, 0.7);
+    color: rgba(100, 105, 106, 1);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.65em;
     line-height: 1.5;
+
 }
 
-.buttons a:first-child:not(:only-child) { border-right: 1px solid rgba(100, 105, 106, 0.3) }
+.buttons a:first-child:not(:only-child) { 
+    border:1px solid;
+}
 
 .buttons a:hover,
 .buttons a:active { color: #64696a }
@@ -247,11 +253,11 @@ body {
 
 .bb-custom-wrapper {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 3%;
+    left: 5%;
     padding: 0 10px;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     border-width: 3px 10px;
     border-style: solid;
 }
@@ -368,9 +374,14 @@ body {
 .page-layout-2 h3 {
     margin: 0;
     font-size: 3em;
-    font-family: "Cardo", serif;
+    font-family: 'Bubbler One', sans-serif;
+    font-weight: 900;
+    border-bottom: 2px solid;
 }
-
+.page-layout-2 p{
+    margin-top: 10%;
+    font-family: 'Dosis', sans-serif;
+}
 .page-layout-3:last-child {
     position: absolute;
     right: 0;
@@ -479,266 +490,6 @@ body {
     transform: rotate(-45deg);
 }
 
-/****** Custom book colors and borders *****/
-
-/* Custom book covers */
-
-.no-csstransforms3d .book[data-book="book-1"],
-.no-js .book[data-book="book-1"],
-.book[data-book="book-1"] .front {
-    background: url(../img/softablitz.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/softablitz.svg), #009bdb;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/softablitz.svg), #009bdb;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-1"] .inner { border-color: #009bdb }
-
-.book[data-book="book-1"] .cover::before {
-    background: url(../img/softablitz.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/spine1.svg), #009bdb;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/spine1.svg), #009bdb;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-2"],
-.no-js .book[data-book="book-2"],
-.book[data-book="book-2"] .front {
-    background: url(../img/insomnia.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/insomnia.svg), #f6a7a5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/insomnia.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-2"] .inner { border-color: #f6a7a5 }
-
-.book[data-book="book-2"] .cover::before {
-    background: url(../img/insomnia.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/insomnia.svg), #f6a7a5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/insomnia.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-3"],
-.no-js .book[data-book="book-3"],
-.book[data-book="book-3"] .front {
-    background: url(../img/droidrush.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/droidrush.svg), #ebc989;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/droidrush.svg), #ebc989;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-3"] .inner { border-color: #ebc989 }
-
-.book[data-book="book-3"] .cover::before {
-    background: url(../img/droidrush.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/droidrush.svg), #ebc989;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/droidrush.svg), #ebc989;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-4"],
-.no-js .book[data-book="book-4"],
-.book[data-book="book-4"] .front {
-    background: url(../img/webster.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/webster.svg), #a6a1a5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/webster.svg), #a6a1a5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-4"] .inner { border-color: #a6a1a5 }
-
-.book[data-book="book-4"] .cover::before {
-    background: url(../img/webster.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/webster.svg), #a6a1a5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/webster.svg), #a6a1a5;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-5"],
-.no-js .book[data-book="book-5"],
-.book[data-book="book-5"] .front {
-    background: url(../img/codeoftheday.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/codeoftheday.svg), #4cbb97;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/codeoftheday.svg), #4cbb97;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-5"] .inner { border-color: #4cbb97 }
-
-.book[data-book="book-5"] .cover::before {
-    background: url(../img/codeoftheday.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/codeoftheday.svg), #4cbb97;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/codeoftheday.svg), #4cbb97;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-6"],
-.no-js .book[data-book="book-6"],
-.book[data-book="book-6"] .front {
-    background: url(../img/operomania.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/operomania.svg), #a1cae5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/operomania.svg), #a1cae5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-6"] .inner { border-color: #a1cae5 }
-
-.book[data-book="book-6"] .cover::before {
-    background: url(../img/operomania.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/operomania.svg), #a1cae5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/operomania.svg), #a1cae5;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-7"],
-.no-js .book[data-book="book-7"],
-.book[data-book="book-7"] .front {
-    background: url(../img/sphinx.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/sphinx.svg), #ebe6e5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/sphinx.svg), #ebe6e5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-7"] .inner { border-color: #ebe6e5 }
-
-.book[data-book="book-7"] .cover::before {
-    background: url(../img/sphinx.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/sphinx.svg), #ebe6e5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/sphinx.svg), #ebe6e5;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-8"],
-.no-js .book[data-book="book-8"],
-.book[data-book="book-8"] .front {
-    background: url(../img/softathalon.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/softathalon.svg), #f8eb48;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/softathalon.svg), #f8eb48;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-8"] .inner { border-color: #f8eb48 }
-
-.book[data-book="book-8"] .cover::before {
-    background: url(../img/softathalon.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/softathalon.svg), #f8eb48;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/softathalon.svg), #f8eb48;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-9"],
-.no-js .book[data-book="book-9"],
-.book[data-book="book-9"] .front {
-    background: url(../img/machinelearning.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/machinelearning.svg), #f7a56e;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/machinelearning.svg), #f7a56e;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-9"] .inner { border-color: #f7a56e }
-
-.book[data-book="book-9"] .cover::before {
-    background: url(../img/machinelearning.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/machinelearning.svg), #f7a56e;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/machinelearning.svg), #f7a56e;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-10"],
-.no-js .book[data-book="book-10"],
-.book[data-book="book-10"] .front {
-    background: url(../img/codewarriors.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/codewarriors.svg), #f6a7a5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/codewarriors.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-10"] .inner { border-color: #f6a7a5 }
-
-.book[data-book="book-10"] .cover::before {
-    background: url(../img/codewarriors.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/codewarriors.svg), #f6a7a5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/codewarriors.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-
-.no-csstransforms3d .book[data-book="book-11"],
-.no-js .book[data-book="book-11"],
-.book[data-book="book-11"] .front {
-    background: url(../img/revengg.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/revengg.svg), #f6a7a5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/revengg.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-11"] .inner { border-color: #f6a7a5 }
-
-.book[data-book="book-11"] .cover::before {
-    background: url(../img/revengg.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/revengg.svg), #f6a7a5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/revengg.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-12"],
-.no-js .book[data-book="book-12"],
-.book[data-book="book-12"] .front {
-    background: url(../img/tuxwars.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/tuxwars.svg), #f6a7a5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/tuxwars.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-12"] .inner { border-color: #f6a7a5 }
-
-.book[data-book="book-12"] .cover::before {
-    background: url(../img/tuxwars.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/tuxwars.svg), #f6a7a5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/tuxwars.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.no-csstransforms3d .book[data-book="book-13"],
-.no-js .book[data-book="book-13"],
-.book[data-book="book-13"] .front {
-    background: url(../img/inception.svg);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/inception.svg), #f6a7a5;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, rgba(211, 211, 211, 0.1) 5%, rgba(255, 255, 255, 0.15) 5%, rgba(255, 255, 255, 0.1) 9%, rgba(0, 0, 0, 0.01) 100%), url(../img/inception.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-.book[data-book="book-13"] .inner { border-color: #f6a7a5 }
-
-.book[data-book="book-13"] .cover::before {
-    background: url(../img/inception.svg);
-    background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/inception.svg), #f6a7a5;
-    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.1) 50%, transparent 100%), url(../img/inception.svg), #f6a7a5;
-    background-repeat: no-repeat;
-}
-
-/* border around bookblock same as book cover color*/
-
-#book-1 { border-color: #009bdb }
-
-#book-2 { border-color: #f6a7a5 }
-
-#book-3 { border-color: #ebc989 }
-
-#book-4 { border-color: #a6a1a5 }
-
-#book-5 { border-color: #4cbb97 }
-
-#book-6 { border-color: #a1cae5 }
-
-#book-7 { border-color: #ebe6e5 }
-
-#book-8 { border-color: #f8eb48 }
-
-#book-9 { border-color: #f7a56e }
-
-/****** Transitions ******/
 
 /* Book open / view inside */
 
@@ -1042,4 +793,27 @@ body {
       -webkit-transform: rotateY(90deg);
       transform: rotateY(90deg);
   }
+}
+
+
+
+
+.mybookcont{
+    margin-top: -10%;
+}
+header.header h1{
+    text-transform: none;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+@media only screen and (max-width: 600px) and (min-width: 200px)  {
+   .book{
+    width: 210px;
+    height: 210px;
+   }
+   .mybookcont{
+    margin-top: -50%;
+   }
+   .header{
+    margin-top: 40px;
+   }
 }
