@@ -32,6 +32,12 @@ body{
 	letter-spacing: 20px;
 	color: #222222;
 }
+.slogan2{
+    font-family: 'Orbitron',sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #222222;
+}
 
 .mylogo{
     height: 250px;
