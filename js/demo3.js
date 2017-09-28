@@ -227,11 +227,11 @@ Tunnel.prototype.render = function() {
 window.onload = function() {
   var loader = new THREE.TextureLoader();
   loader.crossOrigin = "Anonymous";
-
+  console.log(document.getElementsByClassName("demo-3")[0]);
   loader.load(
     "img/demo3/g4.jpg",
     function(texture) {
-      document.body.classList.remove("loading");
+      document.getElementsByClassName("demo-3")[0].classList.remove("loading");
       window.tunnel = new Tunnel(texture);
     }
   );
