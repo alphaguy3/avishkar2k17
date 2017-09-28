@@ -4,6 +4,9 @@ Primary style
 
 -------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Orbitron:900');
+
+
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -576,4 +579,9 @@ header::before {
   .no-js .cd-main-content {
     padding-top: 80px;
   }
+}
+.active a {
+    color: #33414a;
+    background: white;
+    border: 3px solid;
 }

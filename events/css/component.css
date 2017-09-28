@@ -1,6 +1,6 @@
 /* Common style */
 @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
   
 }
@@ -9,7 +9,7 @@ body{
 .grid {
 	margin: 40px auto 120px;
 	max-width: 1000px;
-	width: 90%;
+	width: 100%;
 }
 
 .grid a {
@@ -201,9 +201,11 @@ body{
 .demo-3 .grid figcaption h2 {
 	color: #ffffff;
 	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
 }
 .demo-3 .grid figcaption p {
 	color: #E0E0E0;
+	font-family: 'Roboto', sans-serif;
 }
 
 .demo-3 .grid a:hover figcaption h2 {

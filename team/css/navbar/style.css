@@ -577,3 +577,8 @@ header::before {
     padding-top: 80px;
   }
 }
+.active a {
+    color: #33414a;
+    background: white;
+    border: 3px solid;
+}
