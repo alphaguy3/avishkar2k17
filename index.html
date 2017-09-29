@@ -18,6 +18,53 @@
 		<link rel="stylesheet" type="text/css" href="css/svganimation.css" />
 		<link rel="stylesheet" href="css/slogan.css" />
 		<link rel="stylesheet" href="css/my.css"/>
+
+
+
+
+		<script>
+
+         function register_func(){
+
+            document.getElementById('error').innerHTML = "<br><b><h5 style=\"color:green\">We are getting you onboard.<h5></b>";
+
+            var first_name = document.getElementById('first_name').value;
+            var last_name = document.getElementById('last_name').value;
+            var email = document.getElementById('email').value;
+            var contact = document.getElementById('contact1').value;
+            var college = document.getElementById('college').value;
+            var collegecity = document.getElementById('college_city').value;
+
+            console.log(first_name,last_name);
+
+            $.post('register.php',{first_name:first_name,last_name:last_name,email:email,contact:contact,college:college,collegecity:collegecity},function(data){
+               console.log(data);
+               var res = JSON.parse(data);
+               if(res[0]=="already"){
+                     document.getElementById('error').innerHTML = "<br><b><h5 style=\"color:red;font-family:'Indie-Flower',cursive\">Email-Id already registered<h5></b>";
+
+               }
+               else if(res[0]=="success"){
+                  document.getElementById('first_name');
+                  document.getElementById('last_name');
+                  document.getElementById('email');
+                  document.getElementById('contact1');
+                  document.getElementById('college');
+                  document.getElementById('college_city');
+                  document.getElementById('error').innerHTML = "<br><center><b><h5 style=\"color:green;font-family:'Indie-Flower',cursive\">Successfully registered<h5></b></center>";
+               }
+               else if(res[0]=="failure"){
+                  document.getElementById('error').innerHTML = "<br><center><b><h5 style=\"color:red;font-family:'Indie-Flower',cursive\">Oops!! Something went wrong. Please try again.<h5></b></center>";
+               }
+               else if(res[0]=="empty"){
+                     document.getElementById('error').innerHTML = "<br><center><b><h5 style=\"color:red;font-family:'Indie-Flower',cursive\">Please fill all the details.<h5></b></center>";
+               }
+            });
+         }
+
+  
+      
+		</script>
 	</head>
 	<body>
 
