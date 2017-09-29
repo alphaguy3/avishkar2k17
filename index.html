@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!--     letters    -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
@@ -19,19 +20,84 @@
 		<link rel="stylesheet" href="css/my.css"/>
 	</head>
 	<body>
+
+
+
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog" style="overflow-y:hidden">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		         <h4 class="modal-title" style="color:black">Register for Avishkar 2017</h4>
+		        <button type="button" class="close" data-dismiss="modal"><strong>&times;</strong></button>
+		        
+		      </div>
+		      <div class="modal-body">
+		         <div class="wrap">
+		         <center><img src="images/logo.png" height="150px" width="150px" class="img-responsive"></img></center>
+		         <form action="#" style="text-align:center">
+		            <div class="row">
+		               <div class="col-lg-6 col-md-6 col-sm-12">
+		                  <input id="first_name" type="text" name="first_name" placeholder="First Name" class="form-control" required />
+		               </div>
+		               <div class="col-lg-6 col-md-6 col-sm-12">
+		                  <input id="last_name" type="text" name="last_name" placeholder="Last Name" class="form-control" required />
+		               </div>
+		            </div>
+		            <div class="row">
+		               <div class="col-lg-6 col-md-6 col-sm-12">
+		                  <input id="email" type="email" name="email" placeholder="Email" class="form-control" required />
+		               </div>
+		               <div class="col-lg-6 col-md-6 col-sm-12">
+		                  <input id="contact1" type="number" name="contact" placeholder="Contact Number" class="form-control" required />
+		               </div>
+		            </div>
+		            <div class="row">
+		               <div class="col-lg-6 col-md-6 col-sm-12">
+		                  <input id="college" type="text" name="college" placeholder="College" class="form-control" required />
+		               </div>
+		               <div class="col-lg-6 col-md-6 col-sm-12">
+		                  <input id="college_city" type="text" name="collegecity" placeholder="College City" class="form-control" required />
+		               </div>
+		            </div>
+		        </form>
+		        <div class="row" style="margin-top:20px;">
+		        	<center><button class="btn btn-primary regbtn" onclick="register_func()">REGISTER</button></center>
+		        </div>
+		        <div id="error"></div>
+		    </div>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
+
+		<!-- MODAL ENDS -->
+
+
+
+
+
+
+
+
 		<div class="demo-3 loading">
 			<div class="container-fluid no-p-m">
 			<div class="content">
 				<div class="overlay"></div>
 				<canvas id="scene" style="height: 100%"></canvas>
 			</div>
-			<div id="details">
+			<!--<div id="details">
 				<div class="os-phrases" id="os-phrases">
 					<h2 style="font-family:Orbitron;">IDEATE</h2>
 					<h2 style="font-family:Orbitron;">INNOVATE</h2>
 					<h2 style="font-family:Orbitron;">CREATE</h2>
 				</div>
-			</div>
+			</div>-->
 			<div class="container" id="logo">
 				<div class="row">
 					<div class="col-md-4 col-md-push-4">
@@ -53,6 +119,9 @@
 						<center>
 							<p class="slogan2">11<sup>th</sup> - 14<sup>th</sup> October 2017</p>
 						</center>
+					</div>
+					<div class="col-md-12">
+						<center><button class="btn mybtn" data-toggle="modal" data-target="#myModal">Register</button></center>
 					</div>
 				</div>
 				<div class="bottom-left">
@@ -77,7 +146,7 @@
 	<script src="js/vendors/three.min.js"></script>
 	<script src="js/vendors/TweenMax.min.js"></script>
 	<script>
-		$(document).ready(function() {
+	/*	$(document).ready(function() {
 			var width = $(window).width();
 			$('#logo').hide();
 			$('.glitched').hide();
@@ -98,7 +167,7 @@
 		setTimeout(function(){
 		
 			
-		},14000);
+		},14000);*/
 		$("header").append("<div class='glitch-window'></div>");
 		$( "h1.glitched" ).clone().appendTo( ".glitch-window" );
 	</script>

@@ -7,6 +7,32 @@ body{
     padding: 0;
     margin:0;
 }
+.form-control{
+    border-radius: 0;
+    margin:2%;
+}
+.regbtn{
+    background:white;
+    border:1px solid #222222;
+    color:#222222;
+    border-radius: 0;
+}
+.regbtn:hover{
+    background: #222222;
+    color: white;
+    transition: .5s;
+}
+.mybtn{
+    background:#222222;
+    border:1px solid #222222;
+    color:white;
+    border-radius: 0;
+}
+.mybtn:hover{
+    background: #222222;
+    color: white;
+    transition: .5s;
+}
 .container-fluid{
     padding: 0;
     margin:0; 
