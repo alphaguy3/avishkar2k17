@@ -18,19 +18,9 @@
     <script type="text/javascript" src="js/main.js"></script>
     <style>
 
-.pab_container{
-  position: absolute;
-  left: 10%;
-  top: 30%;
-  font-size: 20px;
-  height: auto;
-}
 
-.map{
-  padding: 20px;
-  position: relative;
-  max-width: 100%;
-}
+
+
 body{
     background: url("../img/demo3/background.jpg");
     overflow: visible;
@@ -45,14 +35,9 @@ body{
 
 .pab-btn{
   font-size: 20px;
-  width: 140%;
 }
-.faq{
-  width: 100%;
-}
+
 .ans_p{
-  width: 110%;
-  float: left;
   font-size:18px;
 }
 </style>
@@ -76,9 +61,9 @@ body{
 </header>
 
 <center><div class="title">Frequently Asked Questions</div></center>
-
+<div class="container">
 <div class="row">
-<dl class="dl-faq pab_container col-md-6">
+<div class=" col-md-6 col-lg-6 col-sm-12">
 
   <dt data-pab="faq_1" class="faq_ques"><div>What is the participation Fee for Avishkar 2017?</div></dt>
 
@@ -115,9 +100,9 @@ body{
     </div>
   </dd>
 
-</dl>
+</div>
 
-<div class="map col-lg-6 col-md-offset-6">
+<div class="map col-lg-6 col-md-6 col-sm-12">
   <div class="g-maps" id="venue">
             <iframe class="map" id="map_canvas"
                width="100%"
@@ -129,6 +114,7 @@ body{
          </div>
 </div>
 
+</div>
 </div>
 <svg style="display:none">
     <defs>
