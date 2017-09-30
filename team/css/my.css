@@ -1,7 +1,7 @@
 body{
     background: url("../../img/demo3/background.jpg");
 }    
-.footer{
+   .footer{
       width: 100%;
       height: 150px;
       background-color: rgba(0, 0, 0, 0.49);
@@ -57,6 +57,8 @@ body{
     transform: scale(1); 
     border-radius: 10px;  
     margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .style_prevu_kit:hover
@@ -110,7 +112,6 @@ body{
     height: 2px;
     width: 50%;
 }
-
 @media only screen and (max-width: 600px) and (min-width: 200px)  {
     header.header h1{
         font-size: 3rem;
