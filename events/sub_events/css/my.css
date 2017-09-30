@@ -835,6 +835,15 @@ header.header h1{
    .header{
     margin-top: 40px;
    }
+   .page-layout-2 p{
+        font-size: 10px;
+    }
+    .page-layout-2 li{
+        font-size: 10px;
+    }
+    .page-layout-2 li li{
+        font-size: 8px;
+    }
 }
 .glitched{
     font-family: 'Orbitron',sans-serif;
