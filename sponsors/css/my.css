@@ -21,7 +21,7 @@ main{
   min-height:400px;
  }
  
- .dlogo{
+ .slogo{
  	height: 150px;
  	width: 200px;
  	margin: 50px;
@@ -52,8 +52,5 @@ main{
       margin-top: -0px;
        height: 50px;
     }
-    .logo{
-      height: 150px;
-      width: 0;
-  }
+
 }
