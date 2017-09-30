@@ -832,4 +832,15 @@ header.header h1{
    .header{
     margin-top: 40px;
    }
+   .page-layout-2 p{
+    font-size: 10px;
+   }
+   .page-layout-2 li{
+        font-family: 'Dosis', sans-serif;
+        font-size: 8px;
+        margin-top: 5%;
+    }
+    .page-layout-2 li li{
+        font-size: 8px;
+    }
 }

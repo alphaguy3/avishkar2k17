@@ -9,124 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.theme.css" />
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="css/navbar/reset.css"> nCSS reset -->
     <link rel="stylesheet" href="css/navbar/style.css"> <!-- Resource style -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <style>
-    .footer{
-      width: 100%;
-      height: 150px;
-      background-color: rgba(0, 0, 0, 0.49);
+     <link rel="stylesheet" href="css/my.css"> <!-- Resource style -->
 
-  }
-  .footer_text{
-      font-size: 18px;
-      color:white;
-      font-weight: 400;
-      line-height: 150px;
-      text-align: center;
-  }
-
-  .category{
-    font-size:4em;
-    margin-top:20px;
-}
-
-
-@keyframes fade
-{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-
-.animation
-{
-    animation-name : fade;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-    animation-timing-function:ease-in;
-}
-
-
-
-.style_prevu_kit
-{
-    background-size: auto 100%;
-    display:inline-block;
-    border:0;
-    width:200px;
-    height:200px;
-    position: relative;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1); 
-    border-radius: 10px;  
-    margin: 10px;
-
-}
-.style_prevu_kit:hover
-{
-    box-shadow: 0px 0px 100px #000000;
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.2);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.2);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.2);
-    transition: all 200ms ease-in;
-    transform: scale(1.2);
-    background-color: rgba(255,255,255,0.2);
-    background-blend-mode: multiply;
-
-}
-
-.section-header{
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: 'Orbitron',sans-serif;
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-
-.section{
-    margin-top: 40px;
-}
-
-.overlay{
-    background-color: rgba(0,0,0,0.5);
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.details{
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 500;
-}
-.customhr{
-    height: 2px;
-    width: 50%;
-}
-body{
-    background: url("../img/demo3/background.jpg");
-}
-</style>
 </head>
 <body>
    <header>
@@ -148,7 +37,7 @@ body{
 
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700' rel='stylesheet' type='text/css'>
-
+<main class="cd-main-content">
 <div align="center">
 
     <div style="width:100%" class="section">
@@ -232,6 +121,7 @@ body{
         <div class="style_prevu_kit" style="background-color:#ffffcc;background-image:url('img/web/asad.jpg')"><div class="overlay"><div class="details" style="left:22%">
         Mohammed Asad</div></div></div>
 </div>
+</div>
 <div class="footer">
       <p class="footer_text" style="margin-bottom: 0">All Rights Reserved &copy; MNNIT Allahabad, 2017</p>
     </div>
@@ -246,7 +136,7 @@ body{
 
     $('.style_prevu_kit').hover(function(){
         $(this).children().show();
-        console.log('aa');
+       // console.log('aa');
     },function(){
         $(this).children().hide();
     })
@@ -257,7 +147,7 @@ var $section = $('.style_prevu_kit');
 var $window = $(window);
 
 function check_if_in_view() {
-    console.log('called');
+    //console.log('called');
   var window_height = $window.height();
   var window_top_position = $window.scrollTop();
   var window_bottom_position = (window_top_position + window_height);
@@ -272,10 +162,10 @@ function check_if_in_view() {
     if ((element_bottom_position >= window_top_position) &&
       (element_top_position <= window_bottom_position)) {
       $element.addClass('animation');
-  console.log('yes');
+ // console.log('yes');
     } else {
       $element.removeClass('animation');
-      console.log('no');
+      //console.log('no');
     }
   });
 }
@@ -283,5 +173,6 @@ function check_if_in_view() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 </script>
+<script src="../js/navbar/main.js"></script>
 </body>
 </html>
