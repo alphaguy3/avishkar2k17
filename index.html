@@ -194,15 +194,36 @@
 	<script src="js/vendors/TweenMax.min.js"></script>
 	<script>
 		$(document).ready(function() {
+
+			//console.log("referrer" + document.referrer.split('/')[2]);
+
+			if(document.referrer.split('/')[2]!="avishkar.xyz"){
+				console.log('no');
 			var width = $(window).width();
 			$('#logo').hide();
 			$('.glitched').hide();
 			$('#slogan').hide();
 			$('.menu').hide();
 			$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+			
+			setTimeout(function(){
+			$('#logo').fadeTo(6000,1);
+			$('.glitched').fadeTo(6000,1);
+			$('#slogan').fadeTo(6000,1);
+			$('#content').fadeTo(6000,0.2);
+			$('.menu').fadeTo(6000,1);
+			},14000);
+
+			}
+			else
+			{
+				console.log('yes');
+				$('#os-phrases').hide();
+			}
+
 		});
 		
-		setTimeout(function(){
+		/*setTimeout(function(){
 			$('#logo').fadeTo(6000,1);
 			$('.glitched').fadeTo(6000,1);
 			$('#slogan').fadeTo(6000,1);
@@ -210,11 +231,7 @@
 			$('.menu').fadeTo(6000,1);
 		
 		},14000);
-		
-		setTimeout(function(){
-		
-			
-		},14000);
+*/
 		$("header").append("<div class='glitch-window'></div>");
 		$( "h1.glitched" ).clone().appendTo( ".glitch-window" );
 	</script>
